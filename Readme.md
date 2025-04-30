@@ -48,8 +48,8 @@ bash
     fastapi dev api.py
 
 ## Access:
-    Open the link bellow on your web browser
-    API Docs (Swagger UI): 
+Open the link bellow on your web browser
+API Docs (Swagger UI): 
     
     http://127.0.0.1:8000/docs
 
