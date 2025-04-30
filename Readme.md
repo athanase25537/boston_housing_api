@@ -32,11 +32,13 @@ cd boston-housing
 
 2. Install dependencies
     bash:
-
+Create virtual environment:
         python3 -m venv myenv
 
+Activate it:
         source myenv/bin/activate
 
+Install dependances:
         pip install -r requirements.txt
 
 NB: Ensure boston_housing_model.pkl is in the project root.
