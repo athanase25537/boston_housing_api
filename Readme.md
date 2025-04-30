@@ -25,12 +25,14 @@ V.    Input Features Documentation
 
 ## Installation
 1. Clone the repository
-bash
 
-git clone https://github.com/athanase25537/boston_housing_api.git
-cd boston-housing
+    git clone https://github.com/athanase25537/boston_housing_api.git
 
-2. Setup
+2. Go to the main folder:
+    
+    cd boston-housing
+
+3. Setup
 
 Create virtual environment:
 
