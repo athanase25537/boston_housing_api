@@ -53,16 +53,16 @@ bash
     fastapi dev api.py
 
 ## Access:
-Open the link bellow on your web browser
+Open the link below on your web browser
 API Docs (Swagger UI): 
     
     http://127.0.0.1:8000/docs
 
 
 ## API Endpoints
-| Endpoint   | Méthode | Description               | Entrée                      | Sortie                                                                 |
+| Endpoint   | Method | Description               | Input                      | Output                                                                 |
 |------------|---------|---------------------------|-----------------------------|------------------------------------------------------------------------|
-| `/predict` | POST    | Prédire le prix d'une maison | JSON (voir ci-dessous)       | `{"predicted_price": float, "unit": "USD", "score": "98.03%"}`         |
+| `/predict` | POST    | Predict house price | JSON (see below)       | `{"predicted_price": float, "unit": "USD", "score": "98.03%"}`         |
 
 ## Input Features Documentation
 
@@ -76,31 +76,30 @@ indus	float	Non-retail business acres per town	7.07
 
 chas	int	Near Charles River? (1=Yes, 0=No)	0
 
-nox	float	Nitric oxide concentration	0.469
-
-rm	float	Average rooms per dwelling	6.421
-
-age	float	% of homes built before 1940	78.9
-
-dis	float	Distance to employment centers	4.967
-
-rad	float	Highway accessibility index	2
-
-tax	float	Property tax rate per $100K	242
-
-ptratio	float	Pupil-teacher ratio	17.8
-
-b	float	Demographic proportion (historical)	396.9
-
-lstat	float	% of lower-status population	9.14
+| Feature  | Type   | Description                                      | Example   |
+|----------|--------|--------------------------------------------------|-----------|
+| `crim`   | float  | Crime rate per capita                            | 0.027     |
+| `zn`     | float  | Residential land zoned for large lots            | 0.0       |
+| `indus`  | float  | Non-retail business acres per town               | 7.07      |
+| `chas`   | int    | Near Charles River? (1=Yes, 0=No)                | 0         |
+| `nox`    | float  | Nitric oxide concentration                       | 0.469     |
+| `rm`     | float  | Average rooms per dwelling                       | 6.421     |
+| `age`    | float  | % of homes built before 1940                     | 78.9      |
+| `dis`    | float  | Distance to employment centers                   | 4.967     |
+| `rad`    | float  | Highway accessibility index                      | 2         |
+| `tax`    | float  | Property tax rate per $100K                       | 242       |
+| `ptratio`| float  | Pupil-teacher ratio                              | 17.8      |
+| `b`      | float  | Demographic proportion (historical)              | 396.9     |
+| `lstat`  | float  | % of lower-status population                     | 9.14      |
 
 Output:
 
-{
-    "predicted_price": 25.934,
+    {
+        
+        "predicted_price": 25.934,
 
-    "unit": "USD", 
+        "unit": "USD", 
 
-    "score": 98,03%
+        "score": 98,03%
 
-}
+    }
