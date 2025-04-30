@@ -66,16 +66,6 @@ API Docs (Swagger UI):
 
 ## Input Features Documentation
 
-Feature	Type	Description	Example
-
-crim	float	Crime rate per capita	0.027
-
-zn	float	Residential land zoned for large lots	0.0
-
-indus	float	Non-retail business acres per town	7.07
-
-chas	int	Near Charles River? (1=Yes, 0=No)	0
-
 | Feature  | Type   | Description                                      | Example   |
 |----------|--------|--------------------------------------------------|-----------|
 | `crim`   | float  | Crime rate per capita                            | 0.027     |
