@@ -30,15 +30,18 @@ bash
 git clone https://github.com/athanase25537/boston_housing_api.git
 cd boston-housing
 
-2. Install dependencies
-    bash:
+2. Setup
+
 Create virtual environment:
+
         python3 -m venv myenv
 
 Activate it:
+
         source myenv/bin/activate
 
 Install dependances:
+
         pip install -r requirements.txt
 
 NB: Ensure boston_housing_model.pkl is in the project root.
