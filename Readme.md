@@ -1,6 +1,7 @@
 # Boston Housing Price Prediction API
 
 This FastAPI application provides a machine learning model to predict housing prices in Boston based on various features like crime rate, number of rooms, and proximity to employment centers.
+
 ## Table of Contents
 
 I.    API Features
@@ -24,6 +25,7 @@ V.    Input Features Documentation
 -    Error handling for missing/invalid features.
 
 ## Installation
+
 1. Clone the repository
 
     git clone https://github.com/athanase25537/boston_housing_api.git
@@ -49,6 +51,7 @@ Install dependances:
 NB: Ensure boston_housing_model.pkl is in the project root.
 
 ## Usage
+
 Run the API locally
 bash
 
@@ -62,6 +65,7 @@ API Docs (Swagger UI):
 
 
 ## API Endpoints
+
 | Endpoint   | Method | Description               | Input                      | Output                                                                 |
 |------------|---------|---------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------------|
 | `/predict` | POST    | Predict house price | JSON (see below)       | `{"predicted_price": float, "unit": "USD", "score": "98.03%"}`         |
