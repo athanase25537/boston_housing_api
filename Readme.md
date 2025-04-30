@@ -60,9 +60,9 @@ API Docs (Swagger UI):
 
 
 ## API Endpoints
-Endpoint	Method	Description	Input	Output
-
-/predict	POST	Predict house price	JSON (see below)	{"predicted_price": float, "unit": "USD", "score": 98,03%}
+| Endpoint   | Méthode | Description               | Entrée                      | Sortie                                                                 |
+|------------|---------|---------------------------|-----------------------------|------------------------------------------------------------------------|
+| `/predict` | POST    | Prédire le prix d'une maison | JSON (voir ci-dessous)       | `{"predicted_price": float, "unit": "USD", "score": "98.03%"}`         |
 
 ## Input Features Documentation
 
