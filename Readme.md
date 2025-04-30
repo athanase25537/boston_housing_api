@@ -64,6 +64,38 @@ API Docs (Swagger UI):
 |------------|---------|---------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------------|
 | `/predict` | POST    | Predict house price | JSON (see below)       | `{"predicted_price": float, "unit": "USD", "score": "98.03%"}`         |
 
+- input:
+
+    {
+        
+        "crim": 0.05,
+        
+        "zn": 18.0,
+        
+        "indus": 2.31,
+        
+        "chas": 0,
+        
+        "nox": 0.538,
+        
+        "rm": 6.575,
+        
+        "age": 65.2,
+        
+        "dis": 4.09,
+        
+        "rad": 1,
+        
+        "tax": 296,
+        
+        "ptratio": 15.3,
+        
+        "b": 396.9,
+        
+        "lstat": 4.98
+        
+    }
+
 ## Input Features Documentation
 
 | Feature  | Type   | Description                                      | Example   |
